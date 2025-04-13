@@ -1,13 +1,18 @@
 /*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+
  */
 package thiago2020310.librarymanagement;
 
 /**
  *
- * @author Thiago
+ * @author 
  */
 public abstract class User {
+    
+    protected int id;
+    protected String name;
+    protected String email;
+    protected String password;
+    protected String role;
     
 }
