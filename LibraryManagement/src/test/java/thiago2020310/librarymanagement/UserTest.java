@@ -116,7 +116,7 @@ public class UserTest {
         assertEquals("admin123", admin.getPassword());
         assertEquals("Admin", admin.getRole());
         
-        assertEquals("Menu:\n 1. Manage Books\n 2. Manage Users\n 3. View Reports", admin.showMenu());
+        assertEquals("Admin Menu:\n 1. Manage Books\n 2. Manage Users\n 3. View Reports", admin.showMenu());
         
     }
     
@@ -130,7 +130,7 @@ public class UserTest {
         assertEquals("member123", member.getPassword());
         assertEquals("Member", member.getRole());
         
-        assertEquals("Menu: \n1. Borrow Book \n2. Return Book \n3. View Issued Books", member.showMenu());
+        assertEquals("Member Menu: \n1. Borrow Book \n2. Return Book \n3. View Issued Books", member.showMenu());
 
     }
 }

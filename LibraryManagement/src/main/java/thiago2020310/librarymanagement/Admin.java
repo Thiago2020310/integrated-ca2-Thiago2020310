@@ -7,6 +7,9 @@ package thiago2020310.librarymanagement;
 /**
  *
  * @author Thiago
+ * 
+ * Admin subclass from User. The role is set by default as "Admin" since it never going to change.
+ * Menu overrides the User showMenu method with valid options for the admin
  */
 public class Admin extends User {
     public Admin(int id, String name, String email, String password) {
@@ -15,6 +18,6 @@ public class Admin extends User {
     
     @Override
     public String showMenu() {
-        return "Menu:\n 1. Manage Books\n 2. Manage Users\n 3. View Reports";
+        return "Admin Menu:\n 1. Manage Books\n 2. Manage Users\n 3. View Reports";
     }
 }
