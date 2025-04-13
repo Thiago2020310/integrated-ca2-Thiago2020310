@@ -36,7 +36,6 @@ public class LibraryManagementTest {
     public void tearDown() throws Exception {
     }
  
-
     /**
      * Test of main method, of class LibraryManagement.
      */
