@@ -8,13 +8,13 @@ package thiago2020310.librarymanagement;
  *
  * @author Thiago
  */
-public class Admin extends User {
-    public Admin(int id, String name, String email, String password) {
-        super(id, name, email, password, "Admin");
+public class Member extends User {
+    public Member(int id, String name, String email, String password) {
+        super(id, name, email, password, "Member");
     }
     
     @Override
     public String showMenu() {
-        return "Menu:\n 1. Manage Books\n 2. Manage Users\n 3. View Reports";
+        return "Menu: \n1. Borrow Book \n2. Return Book \n3. View Issued Books";
     }
 }

@@ -116,8 +116,21 @@ public class UserTest {
         assertEquals("admin123", admin.getPassword());
         assertEquals("Admin", admin.getRole());
         
-        assertEquals("Admin Menu:\n 1. Manage Books\n 2. Manage Users\n 3. View Reports", admin.showMenu());
+        assertEquals("Menu:\n 1. Manage Books\n 2. Manage Users\n 3. View Reports", admin.showMenu());
         
     }
     
+    @Test
+    public void testMemberCreation() {
+        Member member = new Member(2, "Luiza", "luiza@gmail.com", "member123");
+
+        assertEquals(2, member.getId());
+        assertEquals("Luiza", member.getName());
+        assertEquals("luiza@gmail.com", member.getEmail());
+        assertEquals("member123", member.getPassword());
+        assertEquals("Member", member.getRole());
+        
+        assertEquals("Menu: \n1. Borrow Book \n2. Return Book \n3. View Issued Books", member.showMenu());
+
+    }
 }
